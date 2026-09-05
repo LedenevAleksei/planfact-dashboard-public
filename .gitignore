@@ -1,0 +1,34 @@
+# Секреты — никогда не коммитить
+.env
+.env.*
+!.env.example
+*.key
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Собранные данные НЕ коммитим — в них реальные цифры компании.
+# Сотрудник строит index.html сам после того, как вставит свой ключ (fetch_data.py + build.py).
+dashboard/data/dashboard.json
+dashboard/index.html
+
+# Локальные артефакты
+/tmp/
+*.log
+
+# ОС
+.DS_Store
+
+# Архивы передачи (не коммитить)
+*.zip
+
+# Бэкап-экспорт операций (генерируется скриптом, не коммитим — 27 МБ данных)
+# Данные экспорта не коммитим (тяжёлые), но EXPORT_RULES.md — храним в репозитории
+export/**/*.xlsx
+export/**/*.csv
+export/**/*.json
+export/planfact_import/README_ИМПОРТ.md
+export/README.md
