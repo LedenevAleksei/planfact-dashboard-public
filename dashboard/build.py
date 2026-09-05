@@ -591,7 +591,7 @@ function printRegister(id){var r=regs().filter(function(x){return x.id===id;})[0
   +'<style>body{font-family:Arial,Helvetica,sans-serif;margin:28px;color:#111}h1{font-size:18px;margin:0 0 4px}.meta{color:#555;font-size:13px;margin-bottom:14px}'
   +'table{border-collapse:collapse;width:100%;font-size:12px}th,td{border:1px solid #bbb;padding:6px 9px;text-align:left;vertical-align:top}'
   +'th{background:#eee}td.r,th.r{text-align:right;white-space:nowrap}tfoot td{font-weight:bold;background:#f6f6f6}@media print{button{display:none}}</style></head><body>'
-  +'<h1>Реестр платежей</h1><div class="meta">Tekstura DOO · сформирован '+fmtDT(r.ts)+' · платежей: '+r.items.length+'</div>'
+  +'<h1>Реестр платежей</h1><div class="meta">'+DATA.meta.company+' · сформирован '+fmtDT(r.ts)+' · платежей: '+r.items.length+'</div>'
   +'<table><thead><tr><th>Контрагент</th><th>Проект</th><th>Начисление</th><th>Назначение</th><th class="r">К оплате, RSD</th></tr></thead>'
   +'<tbody>'+rows+'</tbody><tfoot><tr><td colspan="4">ИТОГО К ОПЛАТЕ</td><td class="r">'+rub(tot)+'</td></tr></tfoot></table>'
   +'<script>window.onload=function(){window.print();}<\/script></body></html>';

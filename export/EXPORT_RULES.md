@@ -61,7 +61,7 @@ python3 dashboard/export_for_planfact.py
 
 ---
 
-## 4. Особенности НАШИХ данных (Tekstura DOO)
+## 4. Особенности данных проекта
 
 - **Перемещения хранятся как пара Income+Outcome** на статье «Переводы в пути», связанные через
   `boundMoveOperationId`. Отдельного `operationType == "Move"` в самих операциях нет — «Move» это

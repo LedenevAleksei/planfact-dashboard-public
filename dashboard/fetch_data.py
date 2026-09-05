@@ -449,7 +449,7 @@ def main():
     projects = {"groups": proj_groups}
 
     data = {"meta": {"generatedAt": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"),
-                     "asOf": TODAY.isoformat(), "periodStart": PERIOD_START, "company": "Tekstura DOO",
+                     "asOf": TODAY.isoformat(), "periodStart": PERIOD_START, "company": os.environ.get("DASH_COMPANY", "Производственная компания"),
                      "currency": "RSD", "bucketLabels": bucket_labels(), "months": MONTHS},
             "kpis": kpis, "reminders": reminders, "pnl": pnl, "sales": sales, "salesplan": salesplan,
             "receivables": receivables, "payables": payables, "dds": ddsblock, "projects": projects}
